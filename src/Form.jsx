@@ -56,30 +56,30 @@ const Form = () => {
     const validPhone = /^[0-9]*$/;
 
     if(!values.name){
-      validations.name = "Name is required!";
+      validations.name = "Error: This is mendatory field";
     }
     if(!values.email){
-      validations.email = "Email is required!";
+      validations.email = "Error: This is mendatory field";
     }else if(!validMail.test(values.email)){
-      validations.email = "Email is not valid!";
+      validations.email = "Error: Email is not valid!";
     }
     
     if(!values.phone){
-      validations.phone = "Phone number is required!";
+      validations.phone = "Error: This is mendatory field";
     }else if(values.phone.length !== 10 || !validPhone.test(values.phone)){
-      validations.phone = "Phone number is not valid!";
+      validations.phone = "Error: Phone number is not valid!";
     }
     if(!values.question1){
-      validations.question1 = "Please rate!";
+      validations.question1 = "Error: This is mendatory field";
     }
     if(!values.question2){
-      validations.question2 = "Please rate!";
+      validations.question2 = "Error: This is mendatory field";
     }
     if(!values.question3){
-      validations.question3 = "Please rate!";
+      validations.question3 = "Error: This is mendatory field";
     }
     if(!values.question4){
-      validations.question4 = "Please rate!";
+      validations.question4 = "Error: This is mendatory field";
     }
     return validations;
   } 

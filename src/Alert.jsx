@@ -11,7 +11,7 @@ const Alert = ({setFlag})=>{
 
     return(<>
         <div className="alert">
-            <p> Thank you for completing the information! </p>
+            <p> Thank you for completing the information</p>
         </div>
     </>)
 }
