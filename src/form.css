@@ -26,14 +26,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* border: 1px solid crimson; */
 }
 .frm-control{
     width: 50%;
     display: flex;
     flex-direction: column;
     margin: 1em 0;
-    /* border: 1px solid crimson; */
 }
 .rm-margin{
     margin: .5em 0 !important;
@@ -102,13 +100,12 @@
     padding: .5em 0;
     display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid crimson; */
+   
 }
 .check-options{
     display: flex;
     justify-content: flex-start;
     gap: 3em;
-    /* border: 1px solid crimson; */
 }
 .frm-check-control{
     padding: .5em 2px;

@@ -26,9 +26,7 @@ const Table = () => {
 
   const handleSearch = () => {
     const key = searchFilter.filterName === "name" ? "name" : "email";
-    const tmp = allReviews.find((item) => item[key].toLowerCase() === searchFilter.query.toLowerCase());
-    if(tmp !== undefined) setReviews([tmp]);
-    else setReviews([]);
+    setReviews(allReviews.filter((item) => item[key].toLowerCase() === searchFilter.query.toLowerCase()));
   };
   const handleClear = () => {
     setReviews(getLocalStorage());
