@@ -10,6 +10,7 @@ const getLocalStorage = ()=>{
   return list ? JSON.parse(list) : []
 }
 
+
 const Form = () => {
   const [formValues, setFormValues] = useState({
     name: "",
@@ -60,7 +61,6 @@ const Form = () => {
     if(!values.email){
       validations.email = "Email is required!";
     }else if(!validMail.test(values.email)){
-      console.log("running")
       validations.email = "Email is not valid!";
     }
     

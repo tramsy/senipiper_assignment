@@ -11,7 +11,7 @@ const Alert = ({setFlag})=>{
 
     return(<>
         <div className="alert">
-            <p> Your response is submited successfully! </p>
+            <p> Thank you for completing the information! </p>
         </div>
     </>)
 }

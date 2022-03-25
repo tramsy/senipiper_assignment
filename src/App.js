@@ -8,7 +8,6 @@ function App() {
 
   const [activeTab, setActiveTab] = useState(0);
 
-
   return (
     <>
       <Header setActiveTab={setActiveTab} activeTab={activeTab} />

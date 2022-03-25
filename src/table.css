@@ -1,0 +1,120 @@
+.table-sec{
+    width: 95%;
+    margin: 1em auto;
+}
+.table-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filter{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.filter > input{
+    width: 40%;
+    height: 40px;
+    border: none;
+    padding: .2em .5em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 1px solid var(--greyalpha80);
+    border-top: 1px solid var(--greyalpha80);
+    border-bottom: 1px solid var(--greyalpha80);
+    outline: none;
+}
+.filter > select{
+    height: 40px;
+    background: var(--white);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid var(--greyalpha80);
+    border-bottom: 1px solid var(--greyalpha80);
+    border-right: 1px solid var(--greyalpha80);
+    outline: none;
+}
+.search-btn{
+    width: 80px;
+    height: 40px;
+    background: var(--purple300);
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    color: var(--white);
+    margin: 0 1em;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 800px){
+    .table-sec{overflow-x: auto;}
+    .table-heading{flex-direction: column;}
+    .filter{
+        width: 100%;
+        justify-content: center;
+    }
+    .filter > input{
+        width: 70%;
+    }
+    .search-btn{
+        margin: 1em;
+    }
+}
+
+
+.table-sec h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.table{
+    width: 100%;
+    margin: 1em 0;
+}
+
+.table, td, th{
+    border-collapse: collapse;
+    border: 1px solid var(--greyalpha70);
+    font-weight: normal;
+    table-layout:fixed;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 800px) {
+    .table{
+        width: max-content;
+    }
+}
+.table-head{
+    width: 12.5%;
+    max-width: 12.5%;
+    height: 48px;
+    background: var(--purple300);
+    font: normal normal medium 14px/19px;
+    color: var(--text-color);
+}
+.head-row th{
+    padding: 0 .5em;
+}
+.body-row{
+    height: 64px;
+    text-align: center;
+}
+.cap{
+    text-transform: capitalize;
+}
+.d-lst option{
+    padding: .5em 0;
+}
+.not-found{
+    text-align: center;
+    margin: 3em 0;
+    font-size: 28px;
+}
